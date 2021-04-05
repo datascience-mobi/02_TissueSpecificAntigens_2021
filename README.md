@@ -1,14 +1,4 @@
----
-title: "Topic 2 : The role of tissue-specific antigens in different cancer entities"
-output:
-  html_document: 
-    keep_md: yes
-    toc: yes
-vignette: >
-  %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
----
+# Topic 2 : The role of tissue-specific antigens in different cancer entities
 
 **Supervisor:**
 
