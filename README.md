@@ -13,7 +13,7 @@ For this reason tissue-restricted antigens (TRAs) are potentially good drug targ
 
 <center>
 
-![Tissue-restricted antigen (TRA), Dinkelacker 2019](TRA_1.png){width=40%}
+![Tissue-restricted antigen (TRA), Dinkelacker 2019](TRA_1.png)
 
 </center>
 
@@ -49,7 +49,7 @@ https://pubmed.ncbi.nlm.nih.gov/24830344/
 * Dinkelacker 2007. A database of genes that are expressed in a tissue-restricted manner to analyse promiscous gene expression in medullary thymic epithelial cells. Diplomarbeit, Albert-Ludwigs-Universitaet, Freiburg, Germany.
 
 <center>
-![T cell development in the thymus, Klein et al. 2009](Klein2009.png){width=30%}
+![T cell development in the thymus, Klein et al. 2009](Klein2009.png)
 </center>
 
 **Objectives:**
@@ -137,7 +137,7 @@ Thyroid specific genes:
 
 <center>
 
-![T cell development in the thymus, Klein et al. 2009](Picture2.png){width=30%}
+![T cell development in the thymus, Klein et al. 2009](Picture2.png)
 </center>
 
 **Fig. 2:** Piechart of distribution of tissue-type of your subgroup, Klk, Csn, skin-spec., thyroid-spec., pancreas-spec.
@@ -146,7 +146,7 @@ Thyroid specific genes:
 
 <center>
 
-![T cell development in the thymus, Klein et al. 2009](Picture3.png){width=30%}
+![T cell development in the thymus, Klein et al. 2009](Picture3.png)
 </center>
 
 **Data retrieval and data analysis:**
