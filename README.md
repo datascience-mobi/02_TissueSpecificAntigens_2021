@@ -49,7 +49,9 @@ https://pubmed.ncbi.nlm.nih.gov/24830344/
 * Dinkelacker 2007. A database of genes that are expressed in a tissue-restricted manner to analyse promiscous gene expression in medullary thymic epithelial cells. Diplomarbeit, Albert-Ludwigs-Universitaet, Freiburg, Germany.
 
 <center>
+  
 ![T cell development in the thymus, Klein et al. 2009](Klein2009.png)
+
 </center>
 
 **Objectives:**
