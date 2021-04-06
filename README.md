@@ -11,14 +11,13 @@ If these selection procedures don’t work well, human suffer of multiple autoim
 
 For this reason tissue-restricted antigens (TRAs) are potentially good drug targets both in cancer therapy as also in cancer immunotherapy. Among these genes, there are several gene groups, which have been already in focus of cancer immunotherapy, such as testis-specific antigens (CTAs), but also oocyte-specific genes, others are still very unknown, such as kallikrein genes, casein genes, skin-specific genes, pancreas-specific genes, and the role of TRAs in developmental processes in general.
 
-<center>
 
-<figure>
-<img src="TRA_1.png" alt="" style="width:20%">
-     <figcaption>Fig.1 </figcaption>
-</figure> 
+<div class="figure" style="text-align: center">
+<img src="TRA_1.png" alt="Fig. 1 " width="60%" />
+<p class="caption">Fig. 1 </p>
+</div>
 
-</center>
+
 
 **Literature:** 
 
