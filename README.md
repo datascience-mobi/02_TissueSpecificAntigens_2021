@@ -14,11 +14,10 @@ For this reason tissue-restricted antigens (TRAs) are potentially good drug targ
 <center>
 
 <figure>
-<img src="TRA_1.png"
-     alt="Tissue-restricted antigen (TRA), Dinkelacker 2019"
-     style="width:20%">
-     <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-</figure>     
+<img src="TRA_1.png" alt="" style="width:20%">
+     <figcaption>Fig.1 </figcaption>
+</figure> 
+
 </center>
 
 **Literature:** 
