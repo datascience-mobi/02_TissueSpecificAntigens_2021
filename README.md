@@ -104,13 +104,13 @@ Try to import these tables (.csv) files into R and get an overview of tissue-dis
 
 **Literature, to get to know your gene group of interest**
 
-Casein genes:
+**Casein genes:**
 
 * Derbinski et al. 2008, Promiscuous gene expression patterns in single medullary thymic epithelial cells argue for a stochastic mechanism, 
 Proc Natl Acad Sci U S A. 2008 Jan 15;105(2):657-62.
 https://pubmed.ncbi.nlm.nih.gov/18180458/
 
-Kallikrein genes:
+**Kallikrein genes:**
 
 * Brennecke et al. 2015, Single-cell transcriptome analysis reveals coordinated ectopic gene-expression patterns in medullary thymic epithelial cells.
 Nat Immunol. 2015 Sep;16(9):933-41. https://pubmed.ncbi.nlm.nih.gov/26237553/
@@ -119,7 +119,7 @@ Nat Immunol. 2015 Sep;16(9):933-41. https://pubmed.ncbi.nlm.nih.gov/26237553/
 
 * Pinto et al. 2013, Overlapping gene coexpression patterns in human medullary thymic epithelial cells generate self-antigen diversity. Proc Natl Acad Sci U S A. 2013 Sep 10;110(37):E3497-505. https://pubmed.ncbi.nlm.nih.gov/23980163/
 
-Skin specific genes:
+**Skin specific genes:**
 
 * Mahy et al. 2002, Gene density and transcription influence the localization of chromatin outside of chromosome territories detectable by FISH.
 J Cell Biol. 2002 Dec 9;159(5):753-63. https://pubmed.ncbi.nlm.nih.gov/12473685/
@@ -132,14 +132,14 @@ J Cell Biol. 2002 Dec 9;159(5):753-63. https://pubmed.ncbi.nlm.nih.gov/12473685/
 
 *  Linares et al. 2015. Skin Cancer. Prim Care. 2015 Dec;42(4):645-59. https://pubmed.ncbi.nlm.nih.gov/26612377/
 
-Pancreas specific genes:
+**Pancreas specific genes:**
 
 *  MacDonald et al. 1981. Pancreas-specific genes: structure and expression.
 Cancer. 1981 Mar 15;47(6 Suppl):1497-504. https://pubmed.ncbi.nlm.nih.gov/6168351/
 
 * Kleeff et al. 2016. Pancreatic cancer. Nat Rev Dis Primers. 2016 Apr 21;2:16022. https://pubmed.ncbi.nlm.nih.gov/27158978/
 
-Thyroid specific genes:
+**Thyroid specific genes:**
 
 * Ajjan et al. 2015. The Pathogenesis of Hashimoto's Thyroiditis: Further Developments in our Understanding. Horm Metab Res. 2015 Sep;47(10):702-10. https://pubmed.ncbi.nlm.nih.gov/26361257/
 
