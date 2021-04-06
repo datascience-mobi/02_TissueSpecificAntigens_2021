@@ -102,7 +102,7 @@ Try to import these tables (.csv) files into R and get an overview of tissue-dis
 
 * Dinkelacker 2007. A database of genes that are expressed in a tissue-restricted manner to analyse promiscous gene expression in medullary thymic epithelial cells. Diplomarbeit, Albert-Ludwigs-Universitaet, Freiburg, Germany.
 
-**Literature, to get to know you gene group of interest**
+**Literature, to get to know your gene group of interest**
 
 Casein genes:
 
