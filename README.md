@@ -51,14 +51,11 @@ https://pubmed.ncbi.nlm.nih.gov/24830344/
 * Dinkelacker 2007. A database of genes that are expressed in a tissue-restricted manner to analyse promiscous gene expression in medullary thymic epithelial cells. Diplomarbeit, Albert-Ludwigs-Universitaet, Freiburg, Germany.
 
 
+<div class="figure" style="text-align: center">
+<img src="Klein2009.png" alt="T cell development in the thymus, Klein et al. 2009" width="40%" />
+<p class="caption">T cell development in the thymus, Klein et al. 2009</p>
+</div>
 
-<center>
-
-<figure>
-<img src="Klein2009.png" alt="" style="width:20%">
-     <figcaption>T cell development in the thymus, Klein et al. 2009</figcaption>
-</figure> 
-</center>
 
 
 
@@ -145,19 +142,21 @@ Thyroid specific genes:
 
 **Fig. 1:** Piechart of distribution of tissue-type (all TRAs), always use the max tissue type here.
 
-<center>
+<div class="figure" style="text-align: center">
+<img src="Picture2.png" alt="T cell development in the thymus, Klein et al. 2009" width="60%" />
+<p class="caption">T cell development in the thymus, Klein et al. 2009</p>
+</div>
 
-![T cell development in the thymus, Klein et al. 2009](Picture2.png)
-</center>
 
 **Fig. 2:** Piechart of distribution of tissue-type of your subgroup, Klk, Csn, skin-spec., thyroid-spec., pancreas-spec.
 
 **Fig. 3:** Barplot of your genes of your group per chromosome, please be aware, that the X chromosome is a ***“character”***, while the others are numbers, and R does not like both datatypes in one object. Also note that the order is correct 1,2,3, not 1,10,11,2, …, use an order function or sorting vector for this) (Vgl. task 2, R Course **"Dinkelacker"**)
 
-<center>
+<div class="figure" style="text-align: center">
+<img src="Picture3.png" alt="T cell development in the thymus, Klein et al. 2009" width="40%" />
+<p class="caption">T cell development in the thymus, Klein et al. 2009</p>
+</div>
 
-![T cell development in the thymus, Klein et al. 2009](Picture3.png)
-</center>
 
 **Data retrieval and data analysis:**
 
