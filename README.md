@@ -23,6 +23,10 @@ For this reason tissue-restricted antigens (TRAs) are potentially good drug targ
 
 * Kyewski et al. 2004, Self-representation in the thymus: an extended view, Nat. Rev. Immunol. 2004 Sep, 4 (9) 699-698. https://pubmed.ncbi.nlm.nih.gov/15343368/
 
+* Rosenberg et al. 1999. A new era for cancer immunotherapy based on the genes that encode cancer antigens. Immunity. 1999 Mar;10(3):281-7. https://pubmed.ncbi.nlm.nih.gov/10204484/
+
+**Further reading**
+
 * Anderson et al. 2016, AIRE expands: new roles in immune tolerance and beyond.
 Nat Rev Immunol. 2016 Apr;16(4):247-58.
 https://pubmed.ncbi.nlm.nih.gov/26972725/
@@ -44,7 +48,7 @@ Science. 2008 Aug 8;321(5890):776-7. https://pubmed.ncbi.nlm.nih.gov/18687943/
 * Klein et al. 2014, Positive and negative selection of the T cell repertoire: what thymocytes see (and don't see). Nat Rev Immunol. 2014 Jun;14(6):377-91. 
 https://pubmed.ncbi.nlm.nih.gov/24830344/
 
-* Rosenberg et al. 1999. A new era for cancer immunotherapy based on the genes that encode cancer antigens. Immunity. 1999 Mar;10(3):281-7. https://pubmed.ncbi.nlm.nih.gov/10204484/
+**Source to cite in the end for the TRA data**
 
 * Dinkelacker 2019. Chromosomal clustering of tissue restricted antigens, Dissertation, University Heidelberg, Germany.
 
@@ -56,14 +60,13 @@ https://pubmed.ncbi.nlm.nih.gov/24830344/
 <p class="caption">T cell development in the thymus, Klein et al. 2009</p>
 </div>
 
-
-
-
 **Objectives:**
 
 Please get ***TRA data*** from Dr. Dinkelacker, 2007, 2019 (6 different datasets) Su et al. 2002, 2004 (mouse Novartis data), Roth et al. 2008 (human Roth data), Lattin et al. 2006 (mouse Lattin data), human GTEX data 2015 (RNAseq data), and protein atlas data (protein data).
 
 **Literature:**
+
+**To cite the origin of the TRA data (not needed for reading)**
 
 *  Su et al. 2002, Large-scale analysis of the human and mouse transcriptomes.
 Proc Natl Acad Sci U S A. 2002 Apr 2;99(7):4465-70. https://pubmed.ncbi.nlm.nih.gov/11904358/
@@ -93,9 +96,13 @@ Try to import these tables (.csv) files into R and get an overview of tissue-dis
 
 **Literature:**
 
+**Literature to cite the idea, not needed to read**
+
 * Dinkelacker 2019. Chromosomal clustering of tissue restricted antigens, Dissertation, University Heidelberg, Germany.
 
 * Dinkelacker 2007. A database of genes that are expressed in a tissue-restricted manner to analyse promiscous gene expression in medullary thymic epithelial cells. Diplomarbeit, Albert-Ludwigs-Universitaet, Freiburg, Germany.
+
+**Literature, to get to know you gene group of interest**
 
 Casein genes:
 
@@ -147,7 +154,6 @@ Thyroid specific genes:
 <p class="caption">T cell development in the thymus, Klein et al. 2009</p>
 </div>
 
-
 **Fig. 2:** Piechart of distribution of tissue-type of your subgroup, Klk, Csn, skin-spec., thyroid-spec., pancreas-spec.
 
 **Fig. 3:** Barplot of your genes of your group per chromosome, please be aware, that the X chromosome is a ***“character”***, while the others are numbers, and R does not like both datatypes in one object. Also note that the order is correct 1,2,3, not 1,10,11,2, …, use an order function or sorting vector for this) (Vgl. task 2, R Course **"Dinkelacker"**)
@@ -156,7 +162,6 @@ Thyroid specific genes:
 <img src="Picture3.png" alt="T cell development in the thymus, Klein et al. 2009" width="40%" />
 <p class="caption">T cell development in the thymus, Klein et al. 2009</p>
 </div>
-
 
 **Data retrieval and data analysis:**
 
