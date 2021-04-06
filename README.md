@@ -59,8 +59,9 @@ https://pubmed.ncbi.nlm.nih.gov/24830344/
 <img src="Klein2009.png" alt="" style="width:20%">
      <figcaption>T cell development in the thymus, Klein et al. 2009</figcaption>
 </figure> 
-
 </center>
+
+
 
 **Objectives:**
 
