@@ -377,6 +377,13 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 <p class="caption">Example 4 </p>
 </div>
 
+Now you can go back into the literature and find out for example what has been known about the gene **Pax8** in thyroid cancer.
+
+**Literature: (just as an example)**
+
+Eberhardt et al. 2010, The role of the PAX8/PPARgamma fusion oncogene in the pathogenesis of follicular thyroid cancer.
+Mol Cell Endocrinol. 2010 May 28;321(1):50-6. https://pubmed.ncbi.nlm.nih.gov/19883731/
+
 - PCA*
 - k-means*
 - hierarchical clustering*
@@ -385,7 +392,7 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 
 compare groups here as you like, different treatments, healthy versus ill, etc.
 
-Now you can go back into the literature and find out for example what has been known about the gene **Pax8** in thyroid cancer.
+
 
 Safe your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
 
