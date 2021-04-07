@@ -211,6 +211,11 @@ data=ReadAffy()
 
 Do the quality control as denoted in the course, input, single chip control, normalization, RNAdeg plot, density plot, boxplot before and after normalization, meansd plot.
 
+---
+data.norm=vsnrma(data)
+
+---
+
 Now try to extract from the dataset after normalization your genes of interest. In the course these are IL genes, here use your genes from the TRA data. For this extract the expression values from the normalized data with data=exprs(data.vsn).
 
 With rownames(data) you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
