@@ -319,7 +319,7 @@ boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main=
 <p class="caption">Example 1 </p>
 </div>
 
-Or grouped in the example of thyroid genes for example (only a few genes)
+Or grouped by treatment in the example of thyroid genes for example (only a few genes)
 
 <div class="figure" style="text-align: center">
 <img src="ex2.png" alt="Example 2 " width="60%" />
