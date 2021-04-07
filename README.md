@@ -228,8 +228,6 @@ head(data)
 With rownames(data) you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
 
 ---
-**#read in ensemble annotation file**
-
 a=read.csv("ensemble_103.txt",sep="\t")
 
 head(a)
