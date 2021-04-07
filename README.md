@@ -472,10 +472,15 @@ fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "#FC4
 fviz_cluster(k3, data = df)
  
 ---
+**Distance between the genes (eliminate duplicates before)**
+
 <div class="figure" style="text-align: center">
 <img src="ex5.png" alt="Example 5 " width="40%" />
 <p class="caption">Example 5 </p>
 </div>
+
+
+
 <div class="figure" style="text-align: center">
 <img src="ex6.png" alt="Example 6 " width="60%" />
 <p class="caption">Example 6 </p>
