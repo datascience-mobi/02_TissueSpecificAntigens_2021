@@ -385,6 +385,8 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 
 compare groups here as you like, different treatments, healthy versus ill, etc.
 
+Now you can go back into the literature and find out for example what has been known about the gene **Pax8** in thyroid cancer.
+
 Safe your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
 
 Now do the exact same work flow for the other datasets only from your own group and document your work well.
