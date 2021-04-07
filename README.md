@@ -351,7 +351,7 @@ dev.copy2pdf(file="ex2.pdf")
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
 
-Make a heatmap of your genes in the dataset
+**heatmap**
 
 ---
 
@@ -370,7 +370,13 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 <p class="caption">Example 3 </p>
 </div>
 
-- Cluster analysis of your genes *
+**Cluster analysis**
+
+<div class="figure" style="text-align: center">
+<img src="ex4.png" alt="Example 4 " width="60%" />
+<p class="caption">Example 4 </p>
+</div>
+
 - PCA*
 - k-means*
 - hierarchical clustering*
