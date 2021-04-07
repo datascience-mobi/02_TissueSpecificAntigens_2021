@@ -216,18 +216,20 @@ data.norm=vsnrma(data)
 
 ---
 
-Now try to extract from the dataset after normalization your genes of interest. In the course these are IL genes, here use your genes from the TRA data. For this extract the expression values from the normalized data with data=exprs(data.norm).
+Now try to extract from the dataset after normalization your genes of interest. In the course these are IL genes, here use your genes from the TRA data. For this extract the expression values from the normalized data with data.matrix=exprs(data.norm).
 
 ---
-data=exprs(data.norm)
+data.matrix=exprs(data.norm)
 
-head(data)
+head(data.matrix)
 
 ---
 
 With rownames(data) you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
 
 ---
+#read in ensembl annotation file (in dropbox folder)
+
 a=read.csv("ensemble_103.txt",sep="\t")
 
 head(a)
@@ -239,6 +241,28 @@ symbol.ensembl=as.character(a[,4])
 names(symbol.ensembl)=affy.ensembl
 
 head(symbol.ensembl)
+
+#look into data matrix
+
+head(data.matrix)
+
+affyIDs=rownames(data.matrix)
+
+symbol=symbol.ensembl[affyIDs]
+
+head(symbol)
+
+dim(data.matrix)
+
+length(symbol)
+
+#re-apply rownames to gene symbols in the data.matrix
+
+rownames(data.matrix)=symbol
+
+head(data.matrix)
+
+##This is the matrix you can calculate with##
 
 ---
 
