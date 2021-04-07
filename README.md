@@ -195,7 +195,18 @@ BiocManager::install("affy")
 -----
 
 Put the rawdata .CEL files of each project into a folder called **"rawdata"**. 
-Set the working directory with setwd() to the folder and read in the data with the read.affy() function (see R course **"Dinkelacker""**, task 6 for details.)
+Set the working directory with setwd() to the folder and read in the data with the ReadAffy() function (see R course **"Dinkelacker""**, task 6 for details.)
+
+---
+library(affy)
+library(vsn)
+
+setwd(/rawdata/GSE...)
+
+data=ReadAffy()
+
+---
+
 
 Do the quality control as denoted in the course, input, single chip control, normalization, RNAdeg plot, density plot, boxplot before and after normalization, meansd plot.
 
