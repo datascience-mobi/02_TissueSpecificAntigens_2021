@@ -321,6 +321,25 @@ boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main=
 
 Or grouped by treatment in the example of thyroid genes for example (only a few genes)
 
+---
+#three different treatments
+
+data.new=rbind(data.sub,data.sub,data.sub)
+
+data.new[c(1:13),c(ind.radexp,ind.radnonexp)]=NA
+data.new[c(14:26),c(ind.norm,ind.radnonexp)]=NA
+data.new[c(27:39),c(ind.norm,ind.radexp)]=NA
+
+order.vector=sort(colnames(t(data.new)),index.return=T)$ix
+
+boxplot(t(data.new)[,order.vector],cex.axis=0.6,col=c("red","blue","yellow"),main="Gene expression of thyroid-specific TRAs in thyroid cancer, GSE35570",ylab="log2(gene expression)")
+
+abline(h=c(6:12),col="grey",lty=3)
+legend("topright",c("norm","radexp","nonradexp"),col=c("red","blue","yellow"),pch=15,bg="white")
+dev.copy2pdf(file="ex2.pdf")
+
+---
+
 <div class="figure" style="text-align: center">
 <img src="ex2.png" alt="Example 2 " width="60%" />
 <p class="caption">Example 2 </p>
