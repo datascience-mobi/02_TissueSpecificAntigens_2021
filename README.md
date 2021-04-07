@@ -227,6 +227,32 @@ head(data)
 
 With rownames(data) you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
 
+---
+**#read in ensemble annotation file**
+
+a=read.csv("ensemble_103.txt",sep="\t")
+head(a)
+   Gene.stable.ID Transcript.stable.ID Chromosome.scaffold.name HGNC.symbol
+1 ENSG00000210049      ENST00000387314                       MT       MT-TF
+2 ENSG00000210049      ENST00000387314                       MT       MT-TF
+3 ENSG00000210049      ENST00000387314                       MT       MT-TF
+4 ENSG00000210049      ENST00000387314                       MT       MT-TF
+5 ENSG00000210049      ENST00000387314                       MT       MT-TF
+6 ENSG00000210049      ENST00000387314                       MT       MT-TF
+  AFFY.HG.U133.Plus.2.probe AFFY.HuEx.1.0.st.v2.probe
+1                                             2864632
+2                                             4037589
+3                                             4037585
+4                                             4037580
+5                                             4037584
+6                                             4037566
+affy.ensembl=as.character(a[,5])
+symbol.ensembl=as.character(a[,4])
+names(symbol.ensembl)=affy.ensembl
+head(symbol.ensembl)
+
+---
+
 Now select from the vector new.symbols the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest.
 
 Now apply this index to your data matrix and extract the expression values for your genes only with data.klk=data[ind,]
