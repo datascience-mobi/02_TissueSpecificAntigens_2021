@@ -492,6 +492,9 @@ fviz_cluster(k3, data = df)
 <img src="ex7.png" alt="Example 7 " width="80%" />
 <p class="caption">Example 7 </p>
 </div>
+
+**choose the best k-means with three clusters, you find the down-regulated genes in the second cluster**
+
 <div class="figure" style="text-align: center">
 <img src="ex8.png" alt="Example 8 " width="60%" />
 <p class="caption">Example 8 </p>
