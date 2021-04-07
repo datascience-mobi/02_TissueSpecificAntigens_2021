@@ -220,6 +220,7 @@ Now try to extract from the dataset after normalization your genes of interest. 
 
 ---
 data=exprs(data.norm)
+
 head(data)
 
 ---
