@@ -373,7 +373,7 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 **Cluster analysis**
 
 <div class="figure" style="text-align: center">
-<img src="ex4.png" alt="Example 4 " width="60%" />
+<img src="ex4.png" alt="Example 4 " width="40%" />
 <p class="caption">Example 4 </p>
 </div>
 
