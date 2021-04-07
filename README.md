@@ -486,6 +486,8 @@ fviz_cluster(k3, data = df)
 <p class="caption">Example 6 </p>
 </div>
 
+**compare k-means with two, three, four and five clusters**
+
 <div class="figure" style="text-align: center">
 <img src="ex7.png" alt="Example 7 " width="80%" />
 <p class="caption">Example 7 </p>
