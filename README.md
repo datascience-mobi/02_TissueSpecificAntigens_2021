@@ -287,7 +287,7 @@ Now select from the vector new.symbols the genes of your gene group of interest 
 
 row.ind=which(thyroid.TRA1%in%symbol)
 
-data.matrix.sub=data.matrix[ind,]
+data.matrix.sub=data.matrix[row.ind,]
 
 ---
 
