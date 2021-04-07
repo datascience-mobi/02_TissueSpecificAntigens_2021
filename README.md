@@ -314,6 +314,11 @@ boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main=
 
 ---
 
+<div class="figure" style="text-align: center">
+<img src="example.pdf" alt="Example 1 " width="60%" />
+<p class="caption">Example 1 </p>
+</div>
+
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
 
 - Heatmap of these genes *
