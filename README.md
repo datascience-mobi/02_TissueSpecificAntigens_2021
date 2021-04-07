@@ -258,7 +258,7 @@ length(symbol)
 
 #re-apply rownames to gene symbols in the data.matrix
 
-rownames(data.matrix)=symbol
+rownames(data.matrix)=as.character(symbol)
 
 head(data.matrix)
 
