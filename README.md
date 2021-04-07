@@ -98,6 +98,21 @@ For example the Klk genes from the mouse Novartis TRA list are:
 [19] "Klkb1"     "Klk11"     "Klk1b7-ps"
 ------------------------
 
+For example thyroid-specific TRAs:
+
+---
+a=read.csv(file="tra.2014.mouse.5x.table.tsv",sep="\t")
+
+tiss=a[,11]
+
+ind=which(tiss=="thyroid")
+
+TRA.symbol=a[,3]
+
+thyroid.TRA1=TRA.symbol[ind]
+
+---
+
 -	**Klk genes (Project 1) – any cancer**
 -	**Csn genes (Project 2) – any cancer**
 -	**Skin spec. genes (Project 3) – skin cancer**
