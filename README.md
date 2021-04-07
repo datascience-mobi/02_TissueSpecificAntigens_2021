@@ -506,7 +506,7 @@ fviz_cluster(k3, data = df)
 
 compare groups here as you like, different treatments, healthy versus ill, etc.
 
-
+**Please only use this code here as an example, you can use whatever function and packages you want !**
 
 Safe your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
 
