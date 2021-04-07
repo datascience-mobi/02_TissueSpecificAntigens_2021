@@ -287,6 +287,11 @@ Now select from the vector new.symbols the genes of your gene group of interest 
 
 row.ind=which(thyroid.TRA1%in%symbol)
 
+#or (please, note that sometimes upper case and lower case and other problems disturb the search, for example levels, which you can eliminate with as.character and 
+#toupper
+
+row.ind=which(toupper(thyroid.TRA1)%in%as.character(symbol))
+
 data.matrix.sub=data.matrix[row.ind,]
 
 ---
