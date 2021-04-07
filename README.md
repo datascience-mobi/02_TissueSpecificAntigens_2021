@@ -191,6 +191,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("affy")
+
 -----
 
 Put the rawdata .CEL files of each project into a folder called **"rawdata"**. 
