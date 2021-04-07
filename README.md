@@ -199,6 +199,7 @@ Set the working directory with setwd() to the folder and read in the data with t
 
 ---
 library(affy)
+
 library(vsn)
 
 setwd(/rawdata/GSE...)
