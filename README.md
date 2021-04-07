@@ -415,7 +415,80 @@ Eberhardt et al. 2010, The role of the PAX8/PPARgamma fusion oncogene in the pat
 Mol Cell Endocrinol. 2010 May 28;321(1):50-6. https://pubmed.ncbi.nlm.nih.gov/19883731/
 
 - PCA*
-- k-means*
+
+**k-means**
+
+---
+install.packages("tidyverse")
+
+install.packages("factoextra")
+
+library(tidyverse)
+
+library(cluster)
+
+library(factoextra)
+
+#exclude duplicated gene
+
+data.sub1=data.sub[-c(9),]
+
+df=scale(data.sub1)
+
+distance <- get_dist(df)
+
+fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
+
+title(main="distance of thyroid-specific genes in thyroid cancer")
+
+k2 <- kmeans(df, centers = 2, nstart = 25)
+
+str(k2)
+
+viz_cluster(k2, data = df)
+
+k3 <- kmeans(df, centers = 3, nstart = 25)
+
+k4 <- kmeans(df, centers = 4, nstart = 25)
+
+k5 <- kmeans(df, centers = 5, nstart = 25)
+ 
+# plots to compare
+
+p1 <- fviz_cluster(k2, geom = "point", data = df) + ggtitle("k = 2")
+
+p2 <- fviz_cluster(k3, geom = "point",  data = df) + ggtitle("k = 3")
+
+p3 <- fviz_cluster(k4, geom = "point",  data = df) + ggtitle("k = 4")
+
+p4 <- fviz_cluster(k5, geom = "point",  data = df) + ggtitle("k = 5")
+
+library(gridExtra)
+
+grid.arrange(p1, p2, p3, p4, nrow = 2)
+
+fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
+
+fviz_cluster(k3, data = df)
+ 
+---
+<div class="figure" style="text-align: center">
+<img src="ex5.png" alt="Example 5 " width="60%" />
+<p class="caption">Example 5 </p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="ex6.png" alt="Example 6 " width="60%" />
+<p class="caption">Example 6 </p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="ex7.png" alt="Example 7 " width="60%" />
+<p class="caption">Example 7 </p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="ex8.png" alt="Example 8 " width="60%" />
+<p class="caption">Example 8 </p>
+</div>
+
 - hierarchical clustering*
 - statistical test (limma analysis, t-test, F-test)*
 - Venn diagram*
