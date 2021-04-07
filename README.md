@@ -414,6 +414,10 @@ Now you can go back into the literature and find out for example what has been k
 Eberhardt et al. 2010, The role of the PAX8/PPARgamma fusion oncogene in the pathogenesis of follicular thyroid cancer.
 Mol Cell Endocrinol. 2010 May 28;321(1):50-6. https://pubmed.ncbi.nlm.nih.gov/19883731/
 
+**GeneCards, Pax8**
+
+"This gene encodes a member of the paired box (PAX) family of transcription factors. Members of this gene family typically encode proteins that contain a paired box domain, an octapeptide, and a paired-type homeodomain. This nuclear protein is involved in thyroid follicular cell development and expression of thyroid-specific genes. Mutations in this gene have been associated with thyroid dysgenesis, thyroid follicular carcinomas and atypical follicular thyroid adenomas. Alternatively spliced transcript variants encoding different isoforms have been described. [provided by RefSeq, Mar 2010]"
+
 - PCA*
 
 **k-means**
