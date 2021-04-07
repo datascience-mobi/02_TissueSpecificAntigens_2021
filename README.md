@@ -184,6 +184,15 @@ First analyze the breast cancer dataset for your genes of interest and then proc
 
 Start by installing R https://www.r-project.org/ on your computer, if you don't have it yet, Bioconductor https://www.bioconductor.org/ and https://www.rstudio.com/. For the Microarrays you further need the following packages. affy, vsn and read in the ensembl.103.txt annotation file given to you in the dropbox folder.
 
+**install packages affy() and vsn():**
+
+-----
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("affy")
+-----
+
 Put the rawdata .CEL files of each project into a folder called **"rawdata"**. 
 Set the working directory with setwd() to the folder and read in the data with the read.affy() function (see R course **"Dinkelacker""**, task 6 for details.)
 
