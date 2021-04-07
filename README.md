@@ -306,6 +306,12 @@ par(las=2)
 
 boxplot(t(data.sub),col=rainbow(length(rownames(data.sub))),main="gene expression of thyroid-specific genes in thyroid cancer",cex.axis=0.8)
 
+#sort alphabetically
+
+order.vector=sort(colnames(t(data.sub)),index.return=T)$ix
+
+boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main="gene expression of thyroid-specific genes in thyroid cancer",cex.axis=0.8)
+
 ---
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
