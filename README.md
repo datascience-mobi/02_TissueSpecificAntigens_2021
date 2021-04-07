@@ -300,6 +300,14 @@ Now apply this index to your data matrix and extract the expression values for y
 
 check with head(data.klk) if you got the correct genes, also with dim(data.klk) how many you got. Transform the matrix with t(data.klk) and make a boxplot from these. Sort the genes alphabetically and save the plots. (course **"Dinkelacker"**, task 6).
 
+---
+
+par(las=2)
+
+boxplot(t(data.sub),col=rainbow(length(rownames(data.sub))),main="gene expression of thyroid-specific genes in thyroid cancer",cex.axis=0.8)
+
+---
+
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
 
 - Heatmap of these genes *
