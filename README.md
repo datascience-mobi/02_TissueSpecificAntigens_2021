@@ -479,12 +479,13 @@ fviz_cluster(k3, data = df)
 <p class="caption">Example 5 </p>
 </div>
 
-
+**k-means with two clusters, the Pax8 gene clusters away**
 
 <div class="figure" style="text-align: center">
 <img src="ex6.png" alt="Example 6 " width="60%" />
 <p class="caption">Example 6 </p>
 </div>
+
 <div class="figure" style="text-align: center">
 <img src="ex7.png" alt="Example 7 " width="80%" />
 <p class="caption">Example 7 </p>
