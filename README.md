@@ -89,6 +89,7 @@ Science. 2015 Jan 23;347(6220):1260419. https://pubmed.ncbi.nlm.nih.gov/25613900
 Try to import these tables (.csv) files into R (a=read.csv(file="filename",sep="\t") and get an overview of tissue-distribution, and the role of the gene group of your interest in the datasets (ind=grep("^Klk",symbols);Kallikreins=symbols[ind]). (Follow here the basic steps, denoted in the R course from Carl Hermann, lecture 1, 2, 3 and the R Course from Maria Dinkelacker, lecture 1, 2). Please use the union(TRAs1,TRAs2,...) of all six tables for this calculation.
 
 For example the Klk genes from the mouse Novartis TRA list are:
+
 ------------------------
 > Kallikreins
  [1] "Klk1b16"   "Klk1b11"   "Klk10"     "Klk7"      "Klk5"      "Klk1b26"  
