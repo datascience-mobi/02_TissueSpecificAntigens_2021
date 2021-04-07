@@ -500,6 +500,15 @@ fviz_cluster(k3, data = df)
 <p class="caption">Example 8 </p>
 </div>
 
+If you go back into the literature and search for the genes **MSAntd3, SLC46A1, ESRRAP1**, you find:
+
+**Literature: (just as an example)**
+
+Haller et al. 2019, Nuclear NR4A3 Immunostaining Is a Specific and Sensitive Novel Marker for Acinic Cell Carcinoma of the Salivary Glands
+"The recently described HTN3-MSANTD3 gene fusion was observed in 4 of 49 (8%) evaluable AciCCs, all with nuclear NR4A3 immunostaining"
+
+Hlavac et al. 2021, SLC46A1 Haplotype with Predicted Functional Impact has Prognostic Value in Breast Carcinoma.
+
 - hierarchical clustering*
 - statistical test (limma analysis, t-test, F-test)*
 - Venn diagram*
