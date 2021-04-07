@@ -281,7 +281,15 @@ head(data.matrix)
 
 ---
 
-Now select from the vector new.symbols the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest.
+Now select from the vector new.symbols the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest. Please make sure, how many of your genes of interest you can find on the chip, and that you actually find them.
+
+---
+
+row.ind=which(thyroid.TRA1%in%symbol)
+
+data.matrix.sub=data.matrix[ind,]
+
+---
 
 Now apply this index to your data matrix and extract the expression values for your genes only with data.klk=data[ind,]
 
