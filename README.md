@@ -317,7 +317,8 @@ boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main=
 <div class="figure" style="text-align: center">
 <img src="example1.pdf" alt="Example 1 " width="60%" />
 <p class="caption">Example 1 </p>
-</div>
+</div>[example1.pdf](https://github.com/datascience-mobi/02_TissueSpecificAntigens_2021/files/6271544/example1.pdf)
+
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
 
