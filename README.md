@@ -372,6 +372,36 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 
 **Cluster analysis**
 
+---
+
+data_subset=data.sub
+
+cal_z_score <- function(x){
+
++   (x - mean(x)) / sd(x)
+
++ }
+ 
+data_subset_norm <- t(apply(data_subset, 1, cal_z_score))
+
+pheatmap(data_subset_norm)
+
+my_hclust_gene <- hclust(dist(data_subset), method = "complete")
+
+install.packages("dendextend")
+
+library(dendextend)
+
+as.dendrogram(my_hclust_gene) %>%
+
++   plot()
+ 
+title(main="thyroid-specific TRAs in thyroid cancer")
+
+dev.copy2pdf(file="ex4.pdf")
+
+---
+
 <div class="figure" style="text-align: center">
 <img src="ex4.png" alt="Example 4 " width="40%" />
 <p class="caption">Example 4 </p>
