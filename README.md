@@ -86,7 +86,7 @@ GTEx Consortium. Science. 2015 May 8;348(6235):648-60. https://pubmed.ncbi.nlm.n
 * Uhlén et al. 2015, Proteomics. Tissue-based map of the human proteome.
 Science. 2015 Jan 23;347(6220):1260419. https://pubmed.ncbi.nlm.nih.gov/25613900/
 
-Try to import these tables (.csv) files into R (read.csv,sep="\t") and get an overview of tissue-distribution, and the role of the gene group of your interest in the datasets (ind=grep("^Klk",symbols)). (Follow here the basic steps, denoted in the R course from Carl Hermann, lecture 1, 2, 3 and the R Course from Maria Dinkelacker, lecture 1, 2).
+Try to import these tables (.csv) files into R (a=read.csv(file="filename",sep="\t") and get an overview of tissue-distribution, and the role of the gene group of your interest in the datasets (ind=grep("^Klk",symbols);Kallikreins=symbols[ind]). (Follow here the basic steps, denoted in the R course from Carl Hermann, lecture 1, 2, 3 and the R Course from Maria Dinkelacker, lecture 1, 2).
 
 -	**Klk genes (Project 1) – any cancer**
 -	**Csn genes (Project 2) – any cancer**
