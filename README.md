@@ -453,7 +453,7 @@ k4 <- kmeans(df, centers = 4, nstart = 25)
 
 k5 <- kmeans(df, centers = 5, nstart = 25)
  
-# plots to compare
+#plots to compare
 
 p1 <- fviz_cluster(k2, geom = "point", data = df) + ggtitle("k = 2")
 
@@ -473,7 +473,7 @@ fviz_cluster(k3, data = df)
  
 ---
 <div class="figure" style="text-align: center">
-<img src="ex5.png" alt="Example 5 " width="60%" />
+<img src="ex5.png" alt="Example 5 " width="40%" />
 <p class="caption">Example 5 </p>
 </div>
 <div class="figure" style="text-align: center">
@@ -481,7 +481,7 @@ fviz_cluster(k3, data = df)
 <p class="caption">Example 6 </p>
 </div>
 <div class="figure" style="text-align: center">
-<img src="ex7.png" alt="Example 7 " width="60%" />
+<img src="ex7.png" alt="Example 7 " width="80%" />
 <p class="caption">Example 7 </p>
 </div>
 <div class="figure" style="text-align: center">
