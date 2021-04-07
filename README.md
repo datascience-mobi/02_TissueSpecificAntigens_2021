@@ -351,7 +351,25 @@ dev.copy2pdf(file="ex2.pdf")
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
 
-- Heatmap of these genes *
+Make a heatmap of your genes in the dataset
+
+---
+
+install.packages("pheatmap")
+
+library(pheatmap)
+
+pheatmap((data.sub),cex=0.8,main="heatmap of thyroid specific TRAs in thyroid cancer")
+
+dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
+
+---
+
+<div class="figure" style="text-align: center">
+<img src="ex3.png" alt="Example 3 " width="60%" />
+<p class="caption">Example 3 </p>
+</div>
+
 - Cluster analysis of your genes *
 - PCA*
 - k-means*
