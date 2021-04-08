@@ -277,7 +277,7 @@ head(data.matrix)
 ```
 
 
-Now select from the vector `new.symbols` the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest. Please make sure, how many of your genes of interest you can find on the chip, and that you actually find them.
+Now select from the vector `symbol` the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest. Please make sure, how many of your genes of interest you can find on the chip, and that you actually find them.
 
 ```r
 
