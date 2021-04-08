@@ -174,14 +174,12 @@ Cancer. 1981 Mar 15;47(6 Suppl):1497-504. https://pubmed.ncbi.nlm.nih.gov/616835
 
 * Albi et al. 2017. Radiation and Thyroid Cancer. Int J Mol Sci. 2017 Apr 26;18(5):911. https://pubmed.ncbi.nlm.nih.gov/28445397/
 
-**Fig. 1:** Piechart of distribution of tissue-type (all TRAs), always use the max tissue type here.
 
 <div class="figure" style="text-align: center">
 <img src="Picture2.png" alt="T cell development in the thymus, Klein et al. 2009" width="60%" />
-<p class="caption">T cell development in the thymus, Klein et al. 2009</p>
+<p class="caption">Piechart of distribution of tissue-type (all TRAs), always use the max tissue type here.</p>
 </div>
 
-**Fig. 2:** Piechart of distribution of tissue-type of your subgroup, Klk, Csn, skin-spec., thyroid-spec., pancreas-spec.
 
 **Fig. 3:** Barplot of your genes of your group per chromosome, please be aware, that the X chromosome is a ***“character”***, while the others are numbers, and R does not like both datatypes in one object. Also note that the order is correct 1,2,3, not 1,10,11,2, …, use an order function or sorting vector for this) (Vgl. task 2, R Course **"Dinkelacker"**)
 
