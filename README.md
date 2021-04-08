@@ -181,16 +181,17 @@ Cancer. 1981 Mar 15;47(6 Suppl):1497-504. https://pubmed.ncbi.nlm.nih.gov/616835
 </div>
 
 
-**Fig. 3:** Barplot of your genes of your group per chromosome, please be aware, that the X chromosome is a ***“character”***, while the others are numbers, and R does not like both datatypes in one object. Also note that the order is correct 1,2,3, not 1,10,11,2, …, use an order function or sorting vector for this) (Vgl. task 2, R Course **"Dinkelacker"**)
 
 <div class="figure" style="text-align: center">
 <img src="Picture3.png" alt="T cell development in the thymus, Klein et al. 2009" width="40%" />
-<p class="caption">T cell development in the thymus, Klein et al. 2009</p>
+<p class="caption">Barplot of your genes of your group per chromosome, please be aware, that the X chromosome is a ***“character”***, while the others are numbers, and R does not like both datatypes in one object. Also note that the order is correct 1,2,3, not 1,10,11,2, …, use an order function or sorting vector for this) (Vgl. task 2, R Course **"Dinkelacker"**)</p>
 </div>
 
-**Data retrieval and data analysis:**
+## Data retrieval and data analysis
 
 Please get the R course **"Dinkelacker"**, part 1 and 2 in order to learn how to analyze microarray data (task 6). If you want to complete out of this course now or later the complete R course and hand in the tasks you can get credits for this. Please sign up for this course independently.
+
+We provide here step-by-step instructions on how to get from the raw microarray data (.CEL files) to a matrix with gene expression!
 
 Download from dropbox folder https://www.dropbox.com/home/Bioinformatik%20TRA%20Projekt
 all Microarrays of your group. There is one brest cancer dataset (the same for all, in order to learn how to analyze Microarrays) and then in each subfolder there are datasets for your own group.
@@ -199,7 +200,7 @@ First analyze the breast cancer dataset for your genes of interest and then proc
 
 Start by installing R https://www.r-project.org/ on your computer, if you don't have it yet, Bioconductor https://www.bioconductor.org/ and https://www.rstudio.com/. For the Microarrays you further need the following packages. affy, vsn and read in the ensembl.103.txt annotation file given to you in the dropbox folder.
 
-**install packages affy() and vsn():**
+### install packages affy() and vsn():
 
 
 ```r
@@ -210,33 +211,29 @@ BiocManager::install("affy")
 ```
 
 
-Put the rawdata .CEL files of each project into a folder called **"rawdata"**. 
+1. Put the rawdata .CEL files of each project into a folder called **"rawdata"**. 
 Set the working directory with setwd() to the folder and read in the data with the ReadAffy() function (see R course **"Dinkelacker""**, task 6 for details.)
 
 ```r
 library(affy)
-
 library(vsn)
 
 setwd(/rawdata/GSE...)
-
 data=ReadAffy()
-
 ```
 
 
-Do the quality control as denoted in the course, input, single chip control, normalization, RNAdeg plot, density plot, boxplot before and after normalization, meansd plot.
+2. Do the quality control as denoted in the course, input, single chip control, normalization, RNAdeg plot, density plot, boxplot before and after normalization, meansd plot.
 
 ```r
 data.norm=vsnrma(data)
 ```
 
 
-Now try to extract from the dataset after normalization your genes of interest. In the course these are IL genes, here use your genes from the TRA data. For this extract the expression values from the normalized data with data.matrix=exprs(data.norm).
+3. Now try to extract from the dataset after normalization your genes of interest. In the course these are IL genes, here use your genes from the TRA data. For this extract the expression values from the normalized data with data.matrix=exprs(data.norm).
 
 ```r
 data.matrix=exprs(data.norm)
-
 head(data.matrix)
 ```
 
@@ -245,11 +242,9 @@ With `rownames(data)` you get the affy IDs and you can annotate them now with th
 
 ```r
 #read in ensembl annotation file (in dropbox folder)
-
 a=read.csv("ensemble_103.txt",sep="\t")
 
 head(a)
-
 affy.ensembl=as.character(a[,5])
 
 symbol.ensembl=as.character(a[,4])
@@ -291,7 +286,7 @@ row.ind=which(thyroid.TRA1%in%symbol)
 #or (please, note that sometimes upper case and lower case and other problems disturb the search, for example levels, which you can eliminate with as.character and 
 #toupper
 
-row.ind=which(toupper(thyroid.TRA1)%in%as.character(symbol))
+row.ind=which(toupper(thyroid.TRA1) %in% as.character(symbol))
 
 data.matrix.sub=data.matrix[row.ind,]
 ```
@@ -350,22 +345,12 @@ dev.copy2pdf(file="ex2.pdf")
 </div>
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
-
-
-**Literature: (just as an example)**
-
-Haller et al. 2019, Nuclear NR4A3 Immunostaining Is a Specific and Sensitive Novel Marker for Acinic Cell Carcinoma of the Salivary Glands
-"The recently described HTN3-MSANTD3 gene fusion was observed in 4 of 49 (8%) evaluable AciCCs, all with nuclear NR4A3 immunostaining"
-
-Hlavac et al. 2021, SLC46A1 Haplotype with Predicted Functional Impact has Prognostic Value in Breast Carcinoma.
-
 - hierarchical clustering*
 - statistical test (limma analysis, t-test, F-test)*
 - Venn diagram*
 
-compare groups here as you like, different treatments, healthy versus ill, etc.
+Compare groups here as you like, different treatments, healthy versus ill, etc.
 
-**Please only use this code here as an example, you can use whatever function and packages you want !**
 
 Save your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
 
