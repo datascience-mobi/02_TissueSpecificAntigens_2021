@@ -198,7 +198,7 @@ all Microarrays of your group. There is one brest cancer dataset (the same for a
 
 First analyze the breast cancer dataset for your genes of interest and then proceed for the other datasets. Since your calculation power is limited, I only applied a few chips for each dataset. Also get the literature and more information on the data from the https://www.ncbi.nlm.nih.gov/geo/ by inserting the GSE number denoted in each subgroup folder.
 
-Start by installing R https://www.r-project.org/ on your computer, if you don't have it yet, Bioconductor https://www.bioconductor.org/ and https://www.rstudio.com/. For the Microarrays you further need the following packages. affy, vsn and read in the ensembl.103.txt annotation file given to you in the dropbox folder.
+Start by installing R https://www.r-project.org/ on your computer, if you don't have it yet, Bioconductor https://www.bioconductor.org/ and https://www.rstudio.com/. For the Microarrays you further need the following packages. affy, vsn and read in the ensembl.103.txt annotation file, which you can generate yourself. Please go for this to https://www.ensembl.org/index.html to Martview, select the latest human version, select the Ensembl gene ID, Transcript ID, gene Symbol, Chromosome, and the affy ID of the hgu133aplus2 chip (extras), go to Results, select unique results only and download the file as a .tsv file as ensembl.103.txt (Ensembl Version No.). Put it into a folder /tables/ in your project folder, read it in into R with a=read.csv(file="ensembl.103.txt", sep="\t"), see R code below.
 
 ### install packages affy() and vsn():
 
