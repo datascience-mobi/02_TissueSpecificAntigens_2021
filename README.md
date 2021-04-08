@@ -345,12 +345,15 @@ dev.copy2pdf(file="ex2.pdf")
 </div>
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
+
+- heatmap*
+- k-means*
+- dendrogramm*
 - hierarchical clustering*
 - statistical test (limma analysis, t-test, F-test)*
 - Venn diagram*
 
-Compare groups here as you like, different treatments, healthy versus ill, etc.
-
+Compare groups here as you like, different treatments, healthy versus ill, etc. And in the end interprete your findings with the literature in pubmed. Look what has been known before, of what you found and what is new.
 
 Save your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
 
