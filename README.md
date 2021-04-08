@@ -243,7 +243,7 @@ head(data.matrix)
 ```
 
 
-With `rownames(data)` you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
+With `rownames(data)` you get the affy IDs and you can annotate them now with the `ensembl.103.txt` file with symbols and put them back in. rownames(data)=new.symbols.
 
 ```r
 #read in ensembl annotation file (in dropbox folder)
@@ -284,9 +284,9 @@ head(data.matrix)
 ```
 
 
-Now select from the vector new.symbols the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest. Please make sure, how many of your genes of interest you can find on the chip, and that you actually find them.
+Now select from the vector `new.symbols` the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest. Please make sure, how many of your genes of interest you can find on the chip, and that you actually find them.
 
----
+```r
 
 row.ind=which(thyroid.TRA1%in%symbol)
 
@@ -296,15 +296,15 @@ row.ind=which(thyroid.TRA1%in%symbol)
 row.ind=which(toupper(thyroid.TRA1)%in%as.character(symbol))
 
 data.matrix.sub=data.matrix[row.ind,]
+```
 
----
 
-Now apply this index to your data matrix and extract the expression values for your genes only with data.klk=data[ind,]
+Now apply this index to your data matrix and extract the expression values for your genes only with `data.klk=data[ind,]`
 
-check with head(data.klk) if you got the correct genes, also with dim(data.klk) how many you got. Transform the matrix with t(data.klk) and make a boxplot from these. Sort the genes alphabetically and save the plots. (course **"Dinkelacker"**, task 6).
+Check with `head(data.klk)` if you got the correct genes, also with `dim(data.klk)` how many you got. Transform the matrix with `t(data.klk)` and make a boxplot from these. Sort the genes alphabetically and save the plots. (course **"Dinkelacker"**, task 6).
 
----
 
+```r
 par(las=2)
 
 boxplot(t(data.sub),col=rainbow(length(rownames(data.sub))),main="gene expression of thyroid-specific genes in thyroid cancer",cex.axis=0.8)
@@ -314,8 +314,8 @@ boxplot(t(data.sub),col=rainbow(length(rownames(data.sub))),main="gene expressio
 order.vector=sort(colnames(t(data.sub)),index.return=T)$ix
 
 boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main="gene expression of thyroid-specific genes in thyroid cancer",cex.axis=0.8)
+```
 
----
 
 <div class="figure" style="text-align: center">
 <img src="ex1.png" alt="Example 1 " width="60%" />
@@ -324,7 +324,7 @@ boxplot(t(data.sub)[,order.vector],col=rainbow(length(rownames(data.sub))),main=
 
 Or grouped by treatment in the example of thyroid genes for example (only a few genes)
 
----
+```r
 #three different treatments
 
 data.new=rbind(data.sub,data.sub,data.sub)
@@ -344,8 +344,8 @@ abline(h=c(6:12),col="grey",lty=3)
 legend("topright",c("norm","radexp","nonradexp"),col=c("red","blue","yellow"),pch=15,bg="white")
 
 dev.copy2pdf(file="ex2.pdf")
+```
 
----
 
 <div class="figure" style="text-align: center">
 <img src="ex2.png" alt="Example 2 " width="60%" />
@@ -356,8 +356,8 @@ With these genes do further analysis according to the course from Carl Hermann o
 
 **heatmap**
 
----
 
+```r
 install.packages("pheatmap")
 
 library(pheatmap)
@@ -365,8 +365,8 @@ library(pheatmap)
 pheatmap((data.sub),cex=0.8,main="heatmap of thyroid specific TRAs in thyroid cancer")
 
 dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
+```
 
----
 
 <div class="figure" style="text-align: center">
 <img src="ex3.png" alt="Example 3 " width="60%" />
@@ -375,8 +375,8 @@ dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
 
 **Cluster analysis**
 
----
 
+```r
 data_subset=data.sub
 
 cal_z_score <- function(x){
@@ -402,8 +402,8 @@ as.dendrogram(my_hclust_gene) %>%
 title(main="thyroid-specific TRAs in thyroid cancer")
 
 dev.copy2pdf(file="ex4.pdf")
+```
 
----
 
 <div class="figure" style="text-align: center">
 <img src="ex4.png" alt="Example 4 " width="40%" />
