@@ -62,7 +62,8 @@ https://pubmed.ncbi.nlm.nih.gov/24830344/
 
 **Objectives:**
 
-Please get ***TRA data*** from Dr. Dinkelacker, 2007, 2019 (6 different datasets) Su et al. 2002, 2004 (mouse Novartis data), Roth et al. 2008 (human Roth data), Lattin et al. 2006 (mouse Lattin data), human GTEX data 2015 (RNAseq data), and protein atlas data (protein data).
+Please get ***TRA data*** from Dr. Dinkelacker, 2007, 2019 (6 different datasets).
+These datasets were obtained from the following publications: Su et al. 2002, 2004 (mouse Novartis data), Roth et al. 2008 (human Roth data), Lattin et al. 2006 (mouse Lattin data), human GTEX data 2015 (RNAseq data), and protein atlas data (protein data). (see below for exact references)
 
 **Literature:**
 
@@ -86,7 +87,7 @@ GTEx Consortium. Science. 2015 May 8;348(6235):648-60. https://pubmed.ncbi.nlm.n
 * Uhlén et al. 2015, Proteomics. Tissue-based map of the human proteome.
 Science. 2015 Jan 23;347(6220):1260419. https://pubmed.ncbi.nlm.nih.gov/25613900/
 
-Try to import these tables (.csv) files into R (a=read.csv(file="filename",sep="\t") and get an overview of tissue-distribution, and the role of the gene group of your interest in the datasets (ind=grep("^Klk",symbols);Kallikreins=symbols[ind]). (Follow here the basic steps, denoted in the R course from Carl Hermann, lecture 1, 2, 3 and the R Course from Maria Dinkelacker, lecture 1, 2). Please use the union(TRAs1,TRAs2,...) of all six tables for this calculation.
+Try to import these tables (.csv) files into R `a=read.csv(file="filename",sep="\t")` and get an overview of tissue-distribution, and the role of the gene group of your interest in the datasets (`ind=grep("^Klk",symbols);Kallikreins=symbols[ind]`). (Follow here the basic steps, denoted in the R course from Carl Hermann, lecture 1, 2, 3 and the R Course from Maria Dinkelacker, lecture 1, 2). Please use the union(TRAs1,TRAs2,...) of all six tables for this calculation.
 
 For example the Klk genes from the mouse Novartis TRA list are:
 
@@ -101,6 +102,7 @@ For example the Klk genes from the mouse Novartis TRA list are:
 For example thyroid-specific TRAs:
 
 ---
+`
 a=read.csv(file="tra.2014.mouse.5x.table.tsv",sep="\t")
 
 tiss=a[,11]
@@ -110,7 +112,7 @@ ind=which(tiss=="thyroid")
 TRA.symbol=a[,3]
 
 thyroid.TRA1=TRA.symbol[ind]
-
+`
 ---
 
 -	**Klk genes (Project 1) – any cancer**
