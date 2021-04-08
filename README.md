@@ -346,7 +346,6 @@ legend("topright",c("norm","radexp","nonradexp"),col=c("red","blue","yellow"),pc
 dev.copy2pdf(file="ex2.pdf")
 ```
 
-
 <div class="figure" style="text-align: center">
 <img src="ex2.png" alt="Example 2 " width="60%" />
 <p class="caption">Example 2 </p>
@@ -354,160 +353,6 @@ dev.copy2pdf(file="ex2.pdf")
 
 With these genes do further analysis according to the course from Carl Hermann on the data matrix.
 
-**heatmap**
-
-
-```r
-install.packages("pheatmap")
-
-library(pheatmap)
-
-pheatmap((data.sub),cex=0.8,main="heatmap of thyroid specific TRAs in thyroid cancer")
-
-dev.copy2pdf(file="heatmap_thyroid_spec_TRAs_in_thyroid_cancer.pdf")
-```
-
-
-<div class="figure" style="text-align: center">
-<img src="ex3.png" alt="Example 3 " width="60%" />
-<p class="caption">Example 3 </p>
-</div>
-
-**Cluster analysis**
-
-
-```r
-data_subset=data.sub
-
-cal_z_score <- function(x){
-
-+   (x - mean(x)) / sd(x)
-
-+ }
- 
-data_subset_norm <- t(apply(data_subset, 1, cal_z_score))
-
-pheatmap(data_subset_norm)
-
-my_hclust_gene <- hclust(dist(data_subset), method = "complete")
-
-install.packages("dendextend")
-
-library(dendextend)
-
-as.dendrogram(my_hclust_gene) %>%
-
-+   plot()
- 
-title(main="thyroid-specific TRAs in thyroid cancer")
-
-dev.copy2pdf(file="ex4.pdf")
-```
-
-
-<div class="figure" style="text-align: center">
-<img src="ex4.png" alt="Example 4 " width="40%" />
-<p class="caption">Example 4 </p>
-</div>
-
-Now you can go back into the literature and find out for example what has been known about the gene **Pax8** in thyroid cancer.
-
-**Literature: (just as an example)**
-
-Eberhardt et al. 2010, The role of the PAX8/PPARgamma fusion oncogene in the pathogenesis of follicular thyroid cancer.
-Mol Cell Endocrinol. 2010 May 28;321(1):50-6. https://pubmed.ncbi.nlm.nih.gov/19883731/
-
-**GeneCards, Pax8 (just as an example)**
-
-"This gene encodes a member of the paired box (PAX) family of transcription factors. Members of this gene family typically encode proteins that contain a paired box domain, an octapeptide, and a paired-type homeodomain. This nuclear protein is involved in thyroid follicular cell development and expression of thyroid-specific genes. Mutations in this gene have been associated with thyroid dysgenesis, thyroid follicular carcinomas and atypical follicular thyroid adenomas. Alternatively spliced transcript variants encoding different isoforms have been described. [provided by RefSeq, Mar 2010]"
-
-- PCA*
-
-**k-means**
-
----
-install.packages("tidyverse")
-
-install.packages("factoextra")
-
-library(tidyverse)
-
-library(cluster)
-
-library(factoextra)
-
-#exclude duplicated gene
-
-data.sub1=data.sub[-c(9),]
-
-df=scale(data.sub1)
-
-distance <- get_dist(df)
-
-fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
-
-title(main="distance of thyroid-specific genes in thyroid cancer")
-
-k2 <- kmeans(df, centers = 2, nstart = 25)
-
-str(k2)
-
-viz_cluster(k2, data = df)
-
-k3 <- kmeans(df, centers = 3, nstart = 25)
-
-k4 <- kmeans(df, centers = 4, nstart = 25)
-
-k5 <- kmeans(df, centers = 5, nstart = 25)
- 
-#plots to compare
-
-p1 <- fviz_cluster(k2, geom = "point", data = df) + ggtitle("k = 2")
-
-p2 <- fviz_cluster(k3, geom = "point",  data = df) + ggtitle("k = 3")
-
-p3 <- fviz_cluster(k4, geom = "point",  data = df) + ggtitle("k = 4")
-
-p4 <- fviz_cluster(k5, geom = "point",  data = df) + ggtitle("k = 5")
-
-library(gridExtra)
-
-grid.arrange(p1, p2, p3, p4, nrow = 2)
-
-fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
-
-fviz_cluster(k3, data = df)
- 
----
-**Distance between the genes (eliminate duplicates before)**
-
-<div class="figure" style="text-align: center">
-<img src="ex5.png" alt="Example 5 " width="40%" />
-<p class="caption">Example 5 </p>
-</div>
-
-**k-means with two clusters, the Pax8 gene clusters away**
-
-<div class="figure" style="text-align: center">
-<img src="ex6.png" alt="Example 6 " width="60%" />
-<p class="caption">Example 6 </p>
-</div>
-
-**compare k-means with two, three, four and five clusters**
-
-<div class="figure" style="text-align: center">
-<img src="ex7.png" alt="Example 7 " width="80%" />
-<p class="caption">Example 7 </p>
-</div>
-
-**choose the best k-means with three clusters, you find the down-regulated genes in the second cluster**
-
-<div class="figure" style="text-align: center">
-<img src="ex8.png" alt="Example 8 " width="60%" />
-<p class="caption">Example 8 </p>
-</div>
-
-If you go back into the literature and search for the genes **MSAntd3, SLC46A1, ESRRAP1**, you find:
 
 **Literature: (just as an example)**
 
@@ -524,7 +369,7 @@ compare groups here as you like, different treatments, healthy versus ill, etc.
 
 **Please only use this code here as an example, you can use whatever function and packages you want !**
 
-Safe your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
+Save your R script and also your .rda file on your computer. Put all your plots as .pdf in the folder **"plots"** in the dropbox (one per subgroup) and also your .R script in the folder **"session"** and the data matrix only for your gene group as .csv in the folder **"tables"**.
 
 Now do the exact same work flow for the other datasets only from your own group and document your work well.
 
