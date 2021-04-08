@@ -102,7 +102,7 @@ For example the Klk genes from the mouse Novartis TRA list are:
 For example thyroid-specific TRAs:
 
 ---
-`
+```r
 a=read.csv(file="tra.2014.mouse.5x.table.tsv",sep="\t")
 
 tiss=a[,11]
@@ -112,7 +112,7 @@ ind=which(tiss=="thyroid")
 TRA.symbol=a[,3]
 
 thyroid.TRA1=TRA.symbol[ind]
-`
+```
 ---
 
 -	**Klk genes (Project 1) – any cancer**
@@ -203,18 +203,19 @@ Start by installing R https://www.r-project.org/ on your computer, if you don't 
 
 **install packages affy() and vsn():**
 
------
+
+```r
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("affy")
+```
 
------
 
 Put the rawdata .CEL files of each project into a folder called **"rawdata"**. 
 Set the working directory with setwd() to the folder and read in the data with the ReadAffy() function (see R course **"Dinkelacker""**, task 6 for details.)
 
----
+```r
 library(affy)
 
 library(vsn)
@@ -223,28 +224,28 @@ setwd(/rawdata/GSE...)
 
 data=ReadAffy()
 
----
+```
 
 
 Do the quality control as denoted in the course, input, single chip control, normalization, RNAdeg plot, density plot, boxplot before and after normalization, meansd plot.
 
----
+```r
 data.norm=vsnrma(data)
+```
 
----
 
 Now try to extract from the dataset after normalization your genes of interest. In the course these are IL genes, here use your genes from the TRA data. For this extract the expression values from the normalized data with data.matrix=exprs(data.norm).
 
----
+```r
 data.matrix=exprs(data.norm)
 
 head(data.matrix)
+```
 
----
 
-With rownames(data) you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
+With `rownames(data)` you get the affy IDs and you can annotate them now with the ensembl.103.txt file with symbols and put them back in. rownames(data)=new.symbols.
 
----
+```r
 #read in ensembl annotation file (in dropbox folder)
 
 a=read.csv("ensemble_103.txt",sep="\t")
@@ -280,8 +281,8 @@ rownames(data.matrix)=as.character(symbol)
 head(data.matrix)
 
 ##This is the matrix you can calculate with##
+```
 
----
 
 Now select from the vector new.symbols the genes of your gene group of interest and get an integer vector pointing to the rows, you want to extract from your matrix only with your genes of interest. Please make sure, how many of your genes of interest you can find on the chip, and that you actually find them.
 
