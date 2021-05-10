@@ -146,6 +146,36 @@ Nat Immunol. 2015 Sep;16(9):933-41. https://pubmed.ncbi.nlm.nih.gov/26237553/
 
 * Pinto et al. 2013, Overlapping gene coexpression patterns in human medullary thymic epithelial cells generate self-antigen diversity. Proc Natl Acad Sci U S A. 2013 Sep 10;110(37):E3497-505. https://pubmed.ncbi.nlm.nih.gov/23980163/
 
+* The emerging roles of human tissue kallikreins in cancer.
+Borgoño CA, Diamandis EP. Nat Rev Cancer. 2004 Nov;4(11):876-90. doi: 10.1038/nrc1474.
+
+* Human tissue kallikreins: the cancer biomarker family.
+Paliouras M, Borgono C, Diamandis EP. Cancer Lett. 2007 Apr 28;249(1):61-79. doi: 10.1016/j.canlet.2006.12.018. Epub 2007 Jan 31.
+
+* Human tissue kallikreins: physiologic roles and applications in cancer.
+Borgoño CA, Michael IP, Diamandis EP. Mol Cancer Res. 2004 May;2(5):257-80.
+
+* Expression of human Kallikrein 14 (KLK14) in breast cancer is associated with higher tumour grades and positive nodal status.
+Fritzsche F, Gansukh T, Borgoño CA, Burkhardt M, Pahl S, Mayordomo E, Winzer KJ, Weichert W, Denkert C, Jung K, Stephan C, Dietel M, Diamandis EP, Dahl E, Kristiansen G.
+
+* Human kallikrein 8 protein is a favorable prognostic marker in ovarian cancer.
+Borgoño CA, Kishi T, Scorilas A, Harbeck N, Dorn J, Schmalfeldt B, Schmitt M, Diamandis EP. Clin Cancer Res. 2006 Mar 1;12(5):1487-93. doi: 10.1158/1078-0432.CCR-05-2106.
+
+* In-silico analysis of kallikrein gene expression in pancreatic and colon cancers.
+Yousef GM, Borgoño CA, Popalis C, Yacoub GM, Polymeris ME, Soosaipillai A, Diamandis EP. Anticancer Res. 2004 Jan-Feb;24(1):43-51.
+
+* Human kallikrein 13 protein in ovarian cancer cytosols: a new favorable prognostic marker.
+Scorilas A, Borgoño CA, Harbeck N, Dorn J, Schmalfeldt B, Schmitt M, Diamandis EP. J Clin Oncol. 2004 Feb 15;22(4):678-85. doi: 10.1200/JCO.2004.05.144.
+
+* Differential expression of a human kallikrein 5 (KLK5) splice variant in ovarian and prostate cancer.
+Kurlender L, Yousef GM, Memari N, Robb JD, Michael IP, Borgoño C, Katsaros D, Stephan C, Jung K, Diamandis EP. Tumour Biol. 2004 May-Jun;25(3):149-56. doi: 10.1159/000079147.
+
+* Mutant recombinant serpins as highly specific inhibitors of human kallikrein 14.
+Felber LM, Kündig C, Borgoño CA, Chagas JR, Tasinato A, Jichlinski P, Gygi CM, Leisinger HJ, Diamandis EP, Deperthes D, Cloutier SM. FEBS J. 2006 Jun;273(11):2505-14. doi: 10.1111/j.1742-4658.2006.05257.x.
+
+* Steroid hormone regulation and prognostic value of the human kallikrein gene 14 in ovarian cancer.
+Yousef GM, Fracchioli S, Scorilas A, Borgoño CA, Iskander L, Puopolo M, Massobrio M, Diamandis EP, Katsaros D. Am J Clin Pathol. 2003 Mar;119(3):346-55. doi: 10.1309/0ua57mnayv0mce9u.
+
 **Skin specific genes:**
 
 * Mahy et al. 2002, Gene density and transcription influence the localization of chromatin outside of chromosome territories detectable by FISH.
